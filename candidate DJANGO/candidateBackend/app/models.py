@@ -5,7 +5,7 @@ class Candidate(models.Model):
     last_name = models.CharField(max_length=50)
     email = models.EmailField()
     description = models.TextField()
-    cv = models.FileField(upload_to='cv/')
+    cv = models.FileField(upload_to='CVs/')
 
     def __str__(self):
         return f"{self.first_name} {self.last_name}"
